@@ -12,9 +12,11 @@ PURPOSE: To calculate a continuous score of likeness for a given transcriptome b
 *Gene symbols must be the first column of both the training and test matrices, they must be labeled as "hgnc_symbol", and they must match (i.e. you cannot have gene symbols in the training dataset and ensembl ids in the test dataset).*
 
 ### 2. Content
-`pm.score.calc`: function to calculate weighted gene signature based on FDR and case-ctl fold change expression\
-`SigScorePrep`: intermediate function to clean up training data and test data\
-`SigScoreCalc`: function to calculate Signature or "S"-score
+#### R Script
+`s-score_calculation.R`: S-scoring R script
+* `pm.score.calc`: function to calculate weighted gene signature based on FDR and case-ctl fold change expression. 
+* `SigScorePrep`: intermediate function to clean up training data and test data. 
+* `SigScoreCalc`: function to calculate Signature or "S"-score
 
 #### Example data
 `casectl_tube_pax7_edgeR_analysis.txt`: Case-control data from [GSE129505](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE129505).   
